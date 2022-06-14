@@ -1,2 +1,2 @@
-# Curo-pr-ctico-Javascript
+# Curso-práctico-javascript
 Platzi
