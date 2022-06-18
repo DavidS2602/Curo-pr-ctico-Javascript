@@ -1,0 +1,37 @@
+const lista1 = [
+    1,
+    2,
+    2,
+    2,
+    1,
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    2,
+    2,
+    2,
+    1,
+    1,
+]
+
+const lista1Count = {}
+
+lista1.map(
+    function (Elemento) {
+        if (lista1Count[Elemento]){
+            lista1Count[Elemento] +=1
+        }else{
+            lista1Count[Elemento] = 1
+        }
+    }
+)
+
+const lista1Array = Object.entries(lista1Count).sort(
+    function (elementoA, elementoB){
+        return elementoA[1] - elementoB[1]
+    }
+)
+const moda = lista1Array[lista1Array.length - 1]
